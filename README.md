@@ -47,7 +47,7 @@ explore-the-world/
 
 ## Live Demo
 
-[explore-the-world.vercel.app](https://explore-the-world.vercel.app)
+[explore-the-world.vercel.app](https://explore-the-world-henna.vercel.app/)
 
 ## Author
 
