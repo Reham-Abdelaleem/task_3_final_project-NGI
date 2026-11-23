@@ -86,37 +86,214 @@ header .nav-btn {
   display: block;
 }
 .hero .content .description {
-line-height: 1.8; /* or line-height: 29px; */
-color: #eee;
-margin-bottom: 25px;
+  line-height: 1.8; /* or line-height: 29px; */
+  color: #eee;
+  margin-bottom: 25px;
 }
 .hero .content .btn {
-    background-color: #e9a23b;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    display: inline-block;
+  background-color: #e9a23b;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 .hero .content .btn:hover {
-    background-color: #c98421;
-    transform: translateY(-3px);
+  background-color: #c98421;
+  transform: translateY(-3px);
 }
 /* Destinations section */
 .destinations {
-    padding: 80px 8%;
+  padding: 80px 8%;
 }
 
 .destinations .sec-heading {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .destinations .sec-heading h2 {
-font-size: 35px;
-    margin-bottom: 12px;
+  font-size: 35px;
+  margin-bottom: 12px;
 }
 .destinations .sec-heading > p:last-child {
-    color: #777;
+  color: #777;
+}
+
+/* Destinations Section */
+.places-section {
+  padding: 80px 10%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.section-header > p:last-child {
+  color: #777;
+}
+
+/* Destination Card */
+.place-card {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  min-height: 430px;
+}
+
+/* Information */
+.place-content {
+  width: 50%;
+  padding: 40px;
+}
+
+.place-count {
+  color: #e9a23b;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.place-country {
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.place-content h2 {
+  font-size: 45px;
+  margin: 10px 0 15px;
+}
+
+.place-description {
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.place-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-bottom: 25px;
+}
+
+.detail-box h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.detail-box p {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Discover Button */
+.discover-btn {
+  background-color: #17202a;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.discover-btn:hover {
+  background-color: #e9a23b;
+}
+
+/* Destination Image */
+.place-visual {
+  width: 50%;
+  position: relative;
+  min-height: 430px;
+}
+
+.place-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s;
+}
+
+.photo-label {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: white;
+  padding: 18px 25px;
+  border-radius: 8px;
+}
+
+.photo-label span {
+  color: #999;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.photo-label h3 {
+  font-size: 30px;
+  color: #e9a23b;
+  margin-top: 5px;
+}
+
+/* Slider Navigation */
+.places-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.slide-btn {
+  background-color: #17202a;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slide-btn:hover {
+  background-color: #e9a23b;
+}
+
+.slide-indicators {
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #e9a23b;
+}
+
+/* Destination Card */
+.destinations .dest-card {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 /* About section */
 .about {
