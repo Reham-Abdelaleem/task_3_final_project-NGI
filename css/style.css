@@ -1,0 +1,142 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f8f9fc;
+  color: #17202a;
+}
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+.logo a {
+  font-size: 27px;
+  font-weight: 700;
+  color: #17202a;
+}
+.logo span {
+  color: #e9a23b;
+}
+header nav .links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+header .links a {
+  color: #555;
+  transition: color 0.3s ease;
+}
+header nav .links a:hover {
+  color: #e9a23b;
+}
+header .nav-btn {
+  background-color: #17202a;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
+}
+/* Hero section */
+.hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 60px 10%;
+  background:
+    linear-gradient(90deg, rgba(15, 25, 35, 0.85), rgba(15, 25, 35, 0.25)),
+    url("../images/paris.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.hero .content {
+  max-width: 550px;
+}
+.title {
+  color: #e9a23b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  /* 1.2 * 55 px (font size) = 66px */
+  line-height: 1.2; /* or line-height: 66px; */
+  color: #fff;
+}
+.hero h1 span {
+  color: #e9a23b;
+  display: block;
+}
+.hero .content .description {
+line-height: 1.8; /* or line-height: 29px; */
+color: #eee;
+margin-bottom: 25px;
+}
+.hero .content .btn {
+    background-color: #e9a23b;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.hero .content .btn:hover {
+    background-color: #c98421;
+    transform: translateY(-3px);
+}
+/* Destinations section */
+.destinations {
+    padding: 80px 8%;
+}
+
+.destinations .sec-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.destinations .sec-heading h2 {
+font-size: 35px;
+    margin-bottom: 12px;
+}
+.destinations .sec-heading > p:last-child {
+    color: #777;
+}
+/* About section */
+.about {
+  text-align: center;
+  padding: 65px 20px;
+  background-color: #17202a;
+  color: white;
+}
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.about p {
+  color: #ccc;
+}
+/* Footer */
+footer {
+  background-color: #101820;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
